@@ -13,7 +13,7 @@ public class CalculatorController {
                              @RequestParam(value = "varB", defaultValue = "0") float varB) {
         return Addition.add(varA, varB);
     }
-    @GetMapping("/math/subtracting")
+    @GetMapping("/math/subtraction")
     public float subtraction (@RequestParam(value = "varA", defaultValue = "0") float varA,
                              @RequestParam(value = "varB", defaultValue = "0") float varB) {
         return Subtraction.sub(varA, varB);
